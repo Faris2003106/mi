@@ -1,9 +1,23 @@
 import Image from 'next/image'
-
+import React, { useEffect } from 'react';
+import $ from 'jquery';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebook, faInstagram, faLinkedin,faPhone,faEnvelope } from '@fortawesome/free-brands-svg-icons';
 /*const links = ["عن المنصة", "الميزة النسبية للمنطقة", "القطاعات", "الفرص الاستثمارية","خارطة الفرص الاستثمارية","المكتبة الاقتصادية","تواصل معنا"];*/
+
 export default function Header() { 
+    // script for the changing header background color by scrolling
+    
+    useEffect(() => {
+        // Run this code when the component mounts
+        $(window).on('scroll', function() {
+        if ($(window).scrollTop() > 50) {
+            $('.header').addClass('active');
+        } else {
+            $('.header').removeClass('active');
+        }
+        });
+    }, []);
     return (
         <>
         <div className='top-header'>
@@ -28,7 +42,7 @@ export default function Header() {
         <header>
     <div className='header'>
         
-        <a href='#' className='logo'><img src='/mi.png'/></a>
+        <a href='#' className='logo'><img src='/images/mi.png'/></a>
         <input type='checkbox' id='menu-bar'/>
         <label for="menu-bar" id='menu-bar-label'>Menu</label>
     <nav className='navbar'>
@@ -72,33 +86,11 @@ export default function Header() {
     </header>
     <section>
         <div className='hero-bg'>
-        <img src='/img_04.png'/>
-        
+        <img src='/images/img_04.png'/>
+        <div className='hero-title'><h2>قطاعات واعدة</h2></div>
+        <button className='hero-btn'>إكتشف المزيد</button>
         </div>
     </section>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>    
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-
     </>
     );
 }

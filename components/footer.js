@@ -13,7 +13,7 @@ export default function Footer() {
                         <div class="single-footer f-about">
                             <div class="logo">
                                 <a href="#">
-                                    <img src="/footer-logo.png" alt="Logo"/>
+                                    <img src="/images/footer-logo.png" alt="Logo"/>
                                 </a>
                             </div>
                             <p style={{ textAlign: 'justify' }}>
@@ -23,7 +23,7 @@ export default function Footer() {
                     </div>
                     <div class="col-lg-8 col-md-8 col-12">
                         <div class="row">
-                            <div class="col-lg-4 col-md-6 col-12">
+                            <div class="col-lg-4  col-12">
                                 <div class="single-footer f-link">
                                     <h3>الروابط</h3>
                                     <ul>
@@ -34,7 +34,7 @@ export default function Footer() {
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-12">
+                            <div class="col-lg-4  col-12">
                                 <div class="single-footer f-link">
                                     <h3>خدماتنا</h3>
                                     <ul>
@@ -45,7 +45,7 @@ export default function Footer() {
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-12">
+                            <div class="col-lg-4 col-12">
                                 <div class="single-footer f-link">
                                     <h3>تواصل معنا</h3>
                                     <ul class="contactul">
